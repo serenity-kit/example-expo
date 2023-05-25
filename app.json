@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "61c44ac0-c4e3-4c40-b4c4-bf6f04313b57"
+      }
+    },
+    "owner": "serenity-app"
   }
 }
