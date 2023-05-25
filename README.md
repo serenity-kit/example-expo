@@ -55,7 +55,13 @@ with:
 
 5. Commit your changes
 
-6. Run a build
+6. Add react-native-opaque
+
+```sh
+npx expo install react-native-opaque
+```
+
+7. Run a build
 
 ```sh
 eas build --profile development-simulator --platform ios
