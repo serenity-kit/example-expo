@@ -22,3 +22,41 @@ eas build:configure
   }
 }
 ```
+
+4. Add expo-dev-client to package.json
+
+```sh
+npx expo install expo-dev-client
+```
+
+Add this to the top of App.js
+
+```js
+import "expo-dev-client";
+```
+
+Replace in package.json:
+
+```json
+"start": "expo start",
+"android": "expo start --android",
+"ios": "expo start --ios",
+"web": "expo start --web"
+```
+
+with:
+
+```json
+"start": "expo start --dev-client",
+"android": "expo start --android --dev-client",
+"ios": "expo start --ios --dev-client",
+"web": "expo start --web --dev-client"
+```
+
+5. Commit your changes
+
+6. Run a build
+
+```sh
+eas build --profile development-simulator --platform ios
+```
